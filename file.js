@@ -6,6 +6,6 @@ fs.readFileSync('welcome.txt', (err, data)  => {
   } else {
     console.log(data.toString());
    
-    console.log('File read successfully.')
+    console.log('File read successfully.');
   }
 });
