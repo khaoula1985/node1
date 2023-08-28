@@ -1,5 +1,11 @@
 const fs = require('fs');
 
-fs.writeFileSync('welcome.txt', 'Hello Node\n');
-const data = fs.readFileSync('welcome.txt', 'utf8');
-console.log(data);
+fs.readFileSync('welcome.txt', (err, data)  => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(data.toString());
+   
+    console.log('File read successfully.')
+  }
+});
