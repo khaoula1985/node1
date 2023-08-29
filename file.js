@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-fs.readFileSync('welcome.txt', (err, data)  => {
+fs.readFile('welcome.txt', (err, data)  => {
   if (err) {
     console.log(err);
   } else {
